@@ -6,17 +6,24 @@
 }
 
 body {
-  background: #f4f6f8;
   color: #222;
+  min-height: 100vh;
+
+  background-image: url('latar1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
-  background: linear-gradient(135deg, #ff7a00, #f4b400);
+  background: rgba(255, 122, 0, 0.9);
   color: white;
   text-align: center;
   padding: 25px 15px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  backdrop-filter: blur(5px);
 }
 
 header h1 {
@@ -37,10 +44,17 @@ header h1 {
   padding: 14px;
   border: none;
   border-radius: 14px;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   color: #ff7a00;
   font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.menu button:hover {
+  background: #ff7a00;
+  color: white;
 }
 
 .container {
@@ -50,10 +64,11 @@ header h1 {
 }
 
 .card {
-  background: white;
+  background: rgba(255,255,255,0.95);
   padding: 20px;
   border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
 }
 
 .hidden {
@@ -80,6 +95,7 @@ select {
   border: 1px solid #ddd;
   border-radius: 12px;
   font-size: 16px;
+  background: white;
 }
 
 .card button {
@@ -92,12 +108,17 @@ select {
   color: white;
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #e66d00;
 }
 
 .hasil {
   margin-top: 18px;
   padding: 15px;
-  background: #fff4e6;
+  background: rgba(255, 244, 230, 0.95);
   border-left: 5px solid #ff7a00;
   border-radius: 12px;
   line-height: 1.7;
